@@ -1,0 +1,23 @@
+$white: #ffffff;
+
+$text: #F0F0F0;
+$text_link: #0176A9;
+
+$bg_primary: #293245;
+$bg_primary_dark: #1A202C;
+
+$bg_main_btn: #191228;
+  
+$bg_tag_1: #BFAC00 ;
+$bg_tag_2: #349DEA;
+$bg_tag_3: #C58E01;
+$bg_tag_4: #BF7E00;
+$bg_tag_5: #008E0E ;
+
+$bg_progressbar_progress: #008E0E ;
+$bg_progressbar_bg: #646464;
+ 
+body {
+  background-color: $bg_primary;
+  color: $text;
+}

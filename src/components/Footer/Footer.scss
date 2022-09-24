@@ -1,0 +1,22 @@
+$text: #F0F0F0;
+$bg_primary_dark: #1A202C;
+
+.footer {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg_primary_dark;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+
+  & span {
+    margin-right: .2rem;
+  }
+
+  & a {
+    color: $text;
+  }
+}
