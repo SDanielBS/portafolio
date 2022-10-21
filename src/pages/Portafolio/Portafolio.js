@@ -5,6 +5,7 @@ import { Footer } from '../../components/Footer/Footer';
 import './Portafolio.scss';
 
 const Portafolio = () => {
+  console.log("comp")
   return(
     <Fragment>
       <Header/>
