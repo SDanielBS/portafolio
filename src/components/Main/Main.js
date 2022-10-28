@@ -88,6 +88,8 @@ const Main = () => {
     ]
   };
 
+  let contactText = "El selector «mayor qué» (símbolo «>») es utilizado en CSS para seleccionar todos los elementos que sean directamente descendientes de otro, es decir, que sean hijos directos de un determinado elemento padre.";
+
   let pjTitle = projects.result.title;
   let pjSummary = projects.result.summary;
   let pjLanguages = projects.result.languages;
@@ -133,7 +135,7 @@ const Main = () => {
       </div>
       <div className="contactsContainer">
         <h2>Contacto</h2>
-        {/* todo */}
+        <p>{contactText}</p>
       </div>
     </main>
   );

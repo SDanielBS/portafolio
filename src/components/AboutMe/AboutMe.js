@@ -14,7 +14,15 @@ const AboutMe = () => {
       <div className="aboutme-more">
         <RegularButton
           title = "Hola"
-          url = ""
+          url = "https://staticg.sportskeeda.com/editor/2021/10/ce7da-16342796191206-1920.jpg"
+        />
+        <RegularButton
+          title = "Hello"
+          url = "https://staticg.sportskeeda.com/editor/2021/10/ce7da-16342796191206-1920.jpg"
+        />
+        <RegularButton
+          title = "Sams"
+          url = "https://staticg.sportskeeda.com/editor/2021/10/ce7da-16342796191206-1920.jpg"
         />
       </div>
     </div>
