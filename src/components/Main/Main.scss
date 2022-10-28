@@ -1,0 +1,38 @@
+main {
+  & .bannerContainer {
+    padding: 5rem 0 3rem;
+  }
+
+  & .projectsContainer,
+  & .skillsContainer,
+  & .contactsContainer{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    & h2 {
+      margin-bottom: 1.5rem;
+    }
+
+  }
+
+  & .contactsContainer {
+    padding: 3rem 0 5rem;
+  }
+}
+
+.projecsCard, .skillViews {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(386px, 1fr));
+  gap: 2rem;
+}
+
+.skillViews{
+  gap: .5rem 2rem;
+}
+
+@media screen and (max-width: 840px) {
+  .projecsCard {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}

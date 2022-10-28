@@ -1,0 +1,36 @@
+$text: #F0F0F0;
+$bg_card: #1D2638;
+
+.projectCard {
+  // min-width: 250px;
+  padding: 1.4rem 2rem;
+  border: 1px $text solid;
+  border-radius: 1rem;
+  background-color: $bg_card;
+
+  & .projectTitle {
+    font-size: 24px;
+  }
+
+  & .projectSummary {
+    font-size: 16px;
+  }
+
+  & .projectLinks,
+  & .projectLanguages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  & .projectTitle,
+  & .projectSummary {
+    font-weight: 500;
+  }
+
+  & .projectLanguages, 
+  & .projectLinks,
+  & .projectSummary {
+    margin-top: 1rem;
+  }
+}

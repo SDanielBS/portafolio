@@ -1,0 +1,30 @@
+$text: #F0F0F0;
+$bg_primary: #293245;
+
+.mainNavigation {
+  display: inline-flex;
+  flex-direction: row-reverse;
+
+  &-list {
+    display: flex;
+    flex-direction: row;
+    
+    &-item {
+      border-radius: .2rem;
+      list-style: none;
+      margin: 0 .2rem;  
+
+      &:hover {
+        cursor: pointer;
+        background-color: $bg_primary;
+      }
+      
+      a {
+        display: block;
+        color: $text;
+        text-decoration: none;
+        padding: .5rem .6rem;
+      }
+    } 
+  }
+}
