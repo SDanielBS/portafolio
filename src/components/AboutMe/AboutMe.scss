@@ -28,7 +28,7 @@ $text: #F0F0F0;
     & .photo {
       width: 150px;
       height: 150px;
-      background-size: cover;
+      object-fit: cover;
       border-radius: 50%;
     }
   }

@@ -16,12 +16,12 @@ const SkillView = (props) => {
     knowledgeLevel = "alto"
   } else if (percentage > 60) {
     knowledgeLevel = "medio - alto"
-  } else if (percentage > 35) {
+  } else if (percentage > 45) {
     knowledgeLevel = "medio"
-  } else if (percentage > 24) {
+  } else if (percentage > 30) {
     knowledgeLevel = "medio - bajo"
   } else {
-    knowledgeLevel = "-"
+    knowledgeLevel = `${percentage}/100`
   }
 
   return(

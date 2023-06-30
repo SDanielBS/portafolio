@@ -1,116 +1,29 @@
 import { AboutMe } from "../AboutMe/AboutMe";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import { SkillView } from "../SkillView/SkillView";
+import projectJson from '../../dataSource/projectData.json';
+import contactJson from '../../dataSource/contactData.json';
+import skillsJson from '../../dataSource/skillsData.json';
+import aboutmeJson from '../../dataSource/aboutmeData.json';
 import "./Main.scss";
 
 const Main = () => {
-  let projects = {
-    result : {
-      title : "Card 1",
-      summary : "Sí!!! Edgar Vivar, nos acompaña en esta edición de CTM, Sí, el mismísimo señor Barriga, el ñoño, El Botija, es parte de este show y jugamos con él muchos de los juegos",
-      languages : [
-        {
-          color : "#BFAC00",
-          language : "JavaScript"
-        },
-        {
-          color : "#349DEA",
-          language : "HTML"
-        },
-        {
-          color : "#C58E01",
-          language : "SCSS"
-        },
-        {
-          color : "#008E0E",
-          language : "React.js"
-        },
-        {
-          color : "#BF7E00",
-          language : "Node.js"
-        }
-      ],
-      links : [
-        {
-          text : "Repositorio",
-          url : "https://github.com/SDanielBS/",
-        },
-        {
-          text : "Ver en linea",
-          url : "https://github.com/SDanielBS/",
-        }
-      ]
-    }
-  };
-
-  let skills = {
-    result : [
-      {
-        language : "GIT (github, bitbucket)",
-        level : "80"
-      },
-      {
-        language : "HTML",
-        level : "70"
-      },
-      {
-        language : "CSS - SASS",
-        level : "60"
-      },
-      {
-        language : "JavaScript",
-        level : "60"
-      },
-      {
-        language : "TS",
-        level : "40"
-      },
-      {
-        language : "React JS - TS",
-        level : "50"
-      },
-      {
-        language : "Java",
-        level : "50"
-      },
-      {
-        language : "Swift",
-        level : "50"
-      },
-      {
-        language : "PHP",
-        level : "30"
-      },
-      {
-        language : "Figma",
-        level : "50"
-      }
-    ]
-  };
-
-  let contactText = "El selector «mayor qué» (símbolo «>») es utilizado en CSS para seleccionar todos los elementos que sean directamente descendientes de otro, es decir, que sean hijos directos de un determinado elemento padre.";
-
-  let pjTitle = projects.result.title;
-  let pjSummary = projects.result.summary;
-  let pjLanguages = projects.result.languages;
-  let pjLinks = projects.result.links;
-
   let projectsCards = [];
   let skillViews = [];
 
-  for (let i = 0; i < 2; i++) {
+  projectJson.projects.forEach((project, id) => {
     projectsCards.push(
-    <ProjectCard 
-      key={i}
-      title={pjTitle} 
-      summary={pjSummary}
-      languages={pjLanguages}
-      links={pjLinks}
-    />
+      <ProjectCard 
+        key={id}
+        title={project.title} 
+        summary={project.summary}
+        languages={project.languages}
+        links={project.links}
+      />
     );
-  }
+  })
 
-  skills.result.forEach((skill, id) => {
+  skillsJson.languages.forEach((skill, id) => {
     skillViews.push(
       <SkillView
         key={id}
@@ -123,7 +36,7 @@ const Main = () => {
   return (
     <main>
       <div className="bannerContainer">
-        <AboutMe/>
+        <AboutMe data={aboutmeJson.result}/>
       </div>
       <div className="projectsContainer">
         <h2>Proyectos</h2>
@@ -135,7 +48,7 @@ const Main = () => {
       </div>
       <div className="contactsContainer">
         <h2>Contacto</h2>
-        <p>{contactText}</p>
+        <p>{contactJson.result.text ? contactJson.result.text : "De momento no estoy buscando nada unu" }</p>
       </div>
     </main>
   );
