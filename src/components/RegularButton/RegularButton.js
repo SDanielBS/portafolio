@@ -3,27 +3,27 @@ import "./RegularButton.scss";
 
 const RegularButton = (props) => {
   let refImg = useRef();
+  let refAboutmeBtn = useRef(); 
 
-  const shouldShowImg = (url) => {
-    if (url == null || url === "") {
-      refImg.current.classList.add("setHide");
+  const shouldShowView = (value, viewRef) => {
+    if (value == null || value === "") {
+      viewRef.current.classList.add("setHide");
     } else {
-      if (refImg.current.classList.contains("setHide")) {
-        refImg.current.classList.remove("setHide");
+      if (viewRef.current.classList.contains("setHide")) {
+        viewRef.current.classList.remove("setHide");
       }
     }
   }
 
   useEffect(() => {
-    shouldShowImg(props.url);
-    console.log(refImg);
-  },[props.url]);
+    shouldShowView(props.link, refAboutmeBtn)
+  },[props.link]);
 
   return(
-    <button className="button">
+    <a className="button" rel="noreferrer" target="_blank" href={props.link} ref={refAboutmeBtn}>
       <span>{props.title}</span>
       <img src={props.url} alt={props.title} ref={refImg}/>
-    </button>
+    </a>
   )
 }
 

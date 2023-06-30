@@ -1,0 +1,24 @@
+{
+  "result": {
+    "hi": "¡Hola! Soy Sergio",
+    "introduction": "Apasionado desarrollador frontend con experiencia en la creación de experiencias web interactivas y atractivas. Me especializo en tecnologías como HTML, CSS y JavaScript, y siempre estoy buscando oportunidades para mejorar mis habilidades y aprender nuevas herramientas.",
+    "profile_image": "https://avatars.githubusercontent.com/u/71470948?v=4",
+    "actions": [
+      {
+        "name": "Curriculum",
+        "icon": "",
+        "link": ""
+      },
+      {
+        "name": "Github",
+        "icon": "",
+        "link": "https://github.com/SDanielBS"
+      },
+      {
+        "name": "LinkedIn",
+        "icon": "",
+        "link": "https://www.linkedin.com/in/sdanielbs-sergio-bernuy/"
+      }
+    ]
+  }
+}

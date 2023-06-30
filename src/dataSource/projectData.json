@@ -1,0 +1,89 @@
+{
+  "projects": [
+    {
+      "title" : "Dog Breeds",
+      "summary" : "Muestra botones para cada letra del alfabeto, cada uno de estos botones te lleva a una lista de razas de perros que inicien con la letra del boton presionada. Cada boton en la lista de perros te lleva a una pantalla con una foto aleatoria correspondiente a la raza del perro",
+      "languages" : [
+        {
+          "color" : "#BFAC00",
+          "language" : "JavaScript"
+        },
+        {
+          "color" : "#349DEA",
+          "language" : "HTML"
+        },
+        {
+          "color" : "#C58E01",
+          "language" : "SCSS"
+        }
+      ],
+      "links" : [
+        {
+          "text" : "Repositorio",
+          "url" : "https://github.com/SDanielBS/DogBreeds"
+        },
+        {
+          "text" : "Ver en linea",
+          "url" : "https://sdanielbs.github.io/DogBreeds/"
+        }
+      ]
+    },
+    {
+      "title" : "Platzi Conf 2018 - Landing",
+      "summary" : "Pagina estatica y responsive, muestra un panel de presentacion con fonde de imagenes que cambian automaticamente, y dos botones para inscribirse o ser orador en la conferencia. mas abajo muetra una lista de los oradores. La pagina solo es un ejemplo visual estatico",
+      "languages" : [
+        {
+          "color" : "#BFAC00",
+          "language" : "JavaScript"
+        },
+        {
+          "color" : "#349DEA",
+          "language" : "HTML"
+        },
+        {
+          "color" : "#C58E01",
+          "language" : "SCSS"
+        },
+        {
+          "color" : "#735aa3",
+          "language" : "Bootstrap"
+        }
+      ],
+      "links" : [
+        {
+          "text" : "Repositorio",
+          "url" : "https://github.com/SDanielBS/platziConf"
+        },
+        {
+          "text" : "Ver en linea",
+          "url" : "https://sdanielbs.github.io/platziConf/"
+        }
+      ]
+    },
+    {
+      "title" : "BataBit - Landing",
+      "summary" : "Pagina estatica y responsive, muetra informacion irreal sobre tasas de cambios en diferentes criptomonedas y planes de compra. ",
+      "languages" : [
+        {
+          "color" : "#349DEA",
+          "language" : "HTML"
+        },
+        {
+          "color" : "#C58E01",
+          "language" : "CSS"
+        }
+      ],
+      "links" : [
+        {
+          "text" : "Repositorio",
+          "url" : "https://github.com/SDanielBS/BataBit"
+        },
+        {
+          "text" : "Ver en linea",
+          "url" : "https://sdanielbs.github.io/BataBit/"
+        }
+      ]
+    }
+  ]
+}
+ 

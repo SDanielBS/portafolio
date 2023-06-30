@@ -1,0 +1,44 @@
+{
+    "languages" : [
+      {
+        "language" : "GIT (github, bitbucket)",
+        "level" : "80"
+      },
+      {
+        "language" : "HTML",
+        "level" : "70"
+      },
+      {
+        "language" : "CSS - SASS",
+        "level" : "60"
+      },
+      {
+        "language" : "JavaScript",
+        "level" : "60"
+      },
+      {
+        "language" : "TS",
+        "level" : "40"
+      },
+      {
+        "language" : "React JS - TS",
+        "level" : "50"
+      },
+      {
+        "language" : "Java",
+        "level" : "50"
+      },
+      {
+        "language" : "Swift",
+        "level" : "50"
+      },
+      {
+        "language" : "PHP",
+        "level" : "30"
+      },
+      {
+        "language" : "Figma",
+        "level" : "50"
+      }
+    ]
+  }
