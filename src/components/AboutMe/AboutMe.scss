@@ -42,3 +42,35 @@ $text: #F0F0F0;
   }
   
 }
+
+@media screen and (max-width: 1250px) {
+  .aboutme {
+    margin: 0 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .aboutme {
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &-hi {
+      flex-direction: column-reverse;
+      & .introduction {
+        width: 100%;
+
+        h3, p {
+          text-align: center;
+        }
+      }
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+    &-more {
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+}
