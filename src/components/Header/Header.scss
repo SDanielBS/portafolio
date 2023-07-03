@@ -1,4 +1,6 @@
 $bg_primary_dark: #1A202C;
+$bg_primary: #293245;
+$white: #F0F0F0;
 
 .header {
   background-color: $bg_primary_dark;
@@ -10,8 +12,53 @@ $bg_primary_dark: #1A202C;
     height: 80px;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+
+    .hamburguer {
+      display: none;
+    }
   }
 }
 
+@mixin burguerLine {
+  width: 1.8rem;
+  height: 1.2px;
+  background-color: $white;
+}
 
-
+@media screen and (max-width: 500px) {
+  .header {
+    &-container {
+      padding: 0 5%;
+    }
+    .hamburguer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.3rem;
+      padding: .3rem;
+      background-color: $bg_primary;
+      border: 0;
+      cursor: pointer;
+      &_line {
+        display: inline-block;
+        position: relative;
+        @include burguerLine;
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 8px;
+          @include burguerLine;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 8px;
+          @include burguerLine;
+        }
+      }
+    }
+  }
+}

@@ -34,3 +34,9 @@ $bg_progressbar_progress-dark: #003c06;
   }
 
 }
+
+@media screen and (max-width: 500px) {
+  .skillView {
+    // width: 100%;
+  }
+}

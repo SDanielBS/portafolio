@@ -31,8 +31,33 @@ main {
   gap: .5rem 2rem;
 }
 
+@media screen and (max-width: 1250px) {
+  main {
+    & .projectsContainer,
+    & .skillsContainer,
+    & .contactsContainer {
+      margin: 0 5%;
+    }
+  }
+}
+
 @media screen and (max-width: 840px) {
   .projecsCard {
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    & .projectsContainer,
+    & .skillsContainer,
+    & .contactsContainer {
+      padding: 0 5% 3rem;
+    }
+  }
+
+  .projecsCard, .skillViews {
+    gap: 1rem;
+    grid-template-columns: inherit;
   }
 }

@@ -1,5 +1,7 @@
 $text: #F0F0F0;
 $bg_primary: #293245;
+$bg_primary_dark: #1A202C;
+$bg_main_dark: #191228;
 
 .mainNavigation {
   display: inline-flex;
@@ -28,3 +30,47 @@ $bg_primary: #293245;
     } 
   }
 }
+
+@media screen and (max-width: 500px) {
+  .mainNavigation {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    &-list {
+      background-color: $bg_primary_dark;
+      width: 200px;
+      padding: .5rem .3rem;
+      flex-direction: column;
+      gap: .2rem;
+      &-item {
+        background-color: $bg_main_dark; 
+      }
+    }
+  }
+  .hideToRight {
+    right: 100%;
+  }
+}
+
+@keyframes slideLtoR {
+  from {right: 0;}
+  to {right: -100%;}
+}
+
+@keyframes slideRtoL {
+  from {right: -100%;}
+  to {right: 0;}
+}
+
+.hideMenu {
+  animation-name: slideLtoR;
+  animation-duration: .5s;
+  right: -100%;
+}
+
+.showMenu {
+  animation-name: slideRtoL;
+  animation-duration: .5s;
+  right: 0;
+}
+
