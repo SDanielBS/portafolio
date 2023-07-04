@@ -33,8 +33,8 @@ $bg_main_dark: #191228;
 
 @media screen and (max-width: 500px) {
   .mainNavigation {
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 80px;
     right: -100%;
     &-list {
       background-color: $bg_primary_dark;
