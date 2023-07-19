@@ -1,5 +1,5 @@
 // import { BrowserRouter } from "react-router-dom";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Logo } from "../Logo/Logo";
 import { MainNavigation } from "../MainNavigation/MainNavigation";
 import "./Header.scss"
@@ -17,6 +17,8 @@ const Header = () => {
           shouldShow={isChecked}
         />
         <button className="hamburguer" onClick={toggleMenu}>
+          <span className="hamburguer_line" />
+          <span className="hamburguer_line" />
           <span className="hamburguer_line" />
         </button>
       </div>
